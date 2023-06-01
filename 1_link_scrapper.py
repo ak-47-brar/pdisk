@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 
 # specify the URL of the page to scrape
-url = 'http://desivdo.com/?s=chennai&s=chennai'
+url = 'http://desivdo.com/?s=horny&s=horny'
 
 # send a GET request to the URL and get the page content
 response = requests.get(url)
