@@ -5,7 +5,7 @@ logging.basicConfig(level=logging.INFO, format='%(message)s')
 
 def compare_and_update_files():
     # Read the contents of dup_checked.txt
-    with open('dup_checked.txt', 'r') as dup_checked_file:
+    with open('dup_checker.txt', 'r') as dup_checked_file:
         dup_checked_links = set(line.strip() for line in dup_checked_file)
 
     # Read the contents of all_links.txt
@@ -25,7 +25,7 @@ def compare_and_update_files():
             added_count += 1
 
     # Update dup_checked.txt with the modified set of links
-    with open('dup_checked.txt', 'w') as dup_checked_file:
+    with open('dup_checker.txt', 'w') as dup_checked_file:
         for link in dup_checked_links:
             dup_checked_file.write(link + '\n')
 
